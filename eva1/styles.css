@@ -1,63 +1,94 @@
+/*  Locura para que todo tenga el mismo estilo */
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.6;
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(48, 48, 48);
+    background-color: #111;
     color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+div {
+    padding: 10px;
 }
 
 footer {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(48, 48, 48);
+    background-color: #111;
     color: white;
+    text-align: center;
+    padding: 10px;
 }
+
+/* Modificando el fokin tamaño de las imagenes y videos*/
 
 .imagen {
-    display: flexbox;
-    flex-direction: row;
-    width: 440px;
-    height: 248px;
-}
-
-.video {
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
-}
-
-/* Style the form */
-
-.titudiv {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    color: rgb(0, 0, 0);
-}
-
-.formulario {
-    text-align: center;
-    width: 50%;
+    width: 100%;
+    max-width: 490px;
+    height: auto;
     margin: 0 auto;
 }
 
-label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-align: left;
-    display: block;
-    margin-bottom: 2px;
+.video video {
+    width: 100%;
+    max-width: 490px;
+    height: auto;
 }
 
-input,
-textarea {
-    text-align: left;
+iframe {
+    width: 100%;
+    max-width: 490px;
+    height: 275px;
+}
+
+/* Modificación del formulario (Me estresé con esto) */
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto label {
+    margin-top: 10px;
+}
+
+.contacto input,
+.contacto textarea {
     width: 100%;
     padding: 8px;
-    box-sizing: content-box;
+    margin-top: 5px;
 }
 
-button {
-    margin-left: -90%;
-    background-color: rgb(3, 70, 148);
-    color: white;
-    padding: 10px 20px;
-    border: inset;
+.contacto button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    width: auto;
+    align-self: flex-start;
     cursor: pointer;
+    background-color: #09005c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Intento de pagina responsiva */
+@media (max-width: 768px) {
+
+    header {
+        text-align: center;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    .contacto form {
+        width: 90%;
+    }
 }
