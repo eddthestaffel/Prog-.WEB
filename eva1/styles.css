@@ -1,0 +1,23 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+.imagen{
+    display: flexbox;
+    flex-direction: row;
+    width: 25%; 
+}
+
+.video{
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+}
