@@ -16,30 +16,25 @@
 
     <section class="video">
 
-        <h2>Juegos de la semana</h2>
-        <video width="440" height="248" controls>
+        <h2 class="titudiv">Juegos de la semana</h2>
+        <video controls>
             <source src="video/libraryofruina.mp4" type="video/mp4">
         </video>
 
-        <video width="440" height="248" controls>
+        <video controls>
             <source src="video/lobotomycorporation.mp4" type="video/mp4">
         </video>
 
-        <iframe 
-            width="440" 
-            height="248" 
-            src="https://www.youtube-nocookie.com/embed/eJQ6-wP0RPY?si=whzc8_H8NP2UbGqs"
-            title="Minecraft trailer" 
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
+        <iframe src="https://www.youtube.com/embed/FM6L_CjR5ZE?si=jF4_rw0yCtK6un19"
+            title="Último trailer de la actualización de la capa 8 'FRAUDE' de ULTRAKILL" frameborder="0" allow="accelerometer; 
+            autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
 
     </section>
 
     <section class="productos">
-        <h2>Nuestros productos</h2>
+        <h2 class="titudiv">Nuestros productos</h2>
 
         <img src="img/steamdeck.png" class="imagen" alt="Steam Deck">
         <img src="img/nvi.png" class="imagen" alt="Computadora de Colección NAVI">
@@ -48,7 +43,26 @@
     </section>
 
     <section class="contacto">
-        <h2>Contacto</h2>
+        <h2 class="titudiv">Contacto</h2>
+    </section>
+
+    <section class="formulario">
+
+        <form action="action_page.php">
+            <label for="fnombre">Nombre:</label>
+            <input type="text" id="fnombre" name="fnombre" required>
+            
+            <label for="fapellido">Apellido:</label>
+            <input type="text" id="fapellido" name="fapellido" required>
+            
+            <label for="correoe">Correo Electrónico:</label>
+            <input type="email" id="correoe" name="correoe" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
