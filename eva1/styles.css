@@ -88,23 +88,31 @@ iframe {
 .titulo-gracias {
     margin-top: 20px;
     font-size: 18px;
-    color: #555;
+    color: #000000;
 }
 
 .textogracias {
     margin-top: 20px;
     font-size: 18px;
-    color: #555;
+    color: #020731;
 }
 
 .botongracias {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #5d4fdc;
+    background-color: #09005c;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+
+.gracias {
+    background-image: url(img/lor.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Intento de pagina responsiva */
