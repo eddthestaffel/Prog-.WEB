@@ -77,6 +77,36 @@ iframe {
     font-weight: bold;
 }
 
+/*Pagina gracias*/
+.gracias {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-gracias {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.textogracias {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.botongracias {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5d4fdc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 /* Intento de pagina responsiva */
 @media (max-width: 768px) {
 
